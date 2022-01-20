@@ -13,7 +13,7 @@ var twoSum = function (nums, target) {
       }
     }
   }
-};
+}
 
 var twoSum = function (nums, target) {
   var map = new Map;
@@ -21,6 +21,6 @@ var twoSum = function (nums, target) {
     if (map.has(nums[i])) return [i, map.get(nums[i])]
     map.set(target - nums[i], i)
   }
-};
+}
 
-console.log(twoSum([3, 3], 6));
+console.log(twoSum([3, 3], 6))
