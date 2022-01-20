@@ -1,4 +1,4 @@
-/**
+/** 回文字符串
  * @param {number} x
  * @return {boolean}
  */
