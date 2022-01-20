@@ -1,4 +1,4 @@
-/**
+/** 罗马数字转整数
  * @param {string} s
  * @return {number}
  */
@@ -25,6 +25,6 @@ var romanToInt = function (s) {
   s = s.replace('CD', 'e')
   s = s.replace('CM', 'f')
   return s.split('').reduce((acc, cur) => acc + map[cur], 0)
-};
+}
 
-console.log(romanToInt('MCMXCIV'));
+console.log(romanToInt('MCMXCIV'))
