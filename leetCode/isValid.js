@@ -13,6 +13,7 @@ var isValid = function (s) {
 
   for (let i = 0; i < s.length; i++) {
     const curry = s[i]
+    // 判断map对象中是否有curry该键值
     if (curry in map) {
       stack.push(curry)
       continue
