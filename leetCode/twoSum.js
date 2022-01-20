@@ -15,6 +15,7 @@ var twoSum = function (nums, target) {
   }
 }
 
+// map 集合
 var twoSum = function (nums, target) {
   var map = new Map;
   for (let i = 0; i < nums.length; i++) {
