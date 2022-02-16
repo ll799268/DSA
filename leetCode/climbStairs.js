@@ -14,5 +14,4 @@ var climbStairs = function (n) {
   return dp[n - 1]
 }
 
-climbStairs('5')
-// console.log(climbStairs('5'))
+console.log(climbStairs('5'))
