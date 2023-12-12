@@ -1,4 +1,5 @@
 /**
+ * Nim游戏
  * @param {number} n
  * @return {boolean}
  */
