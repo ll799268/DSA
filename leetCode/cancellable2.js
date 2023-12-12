@@ -1,4 +1,5 @@
 /**
+ * 间隔取消二
  * @param {Function} fn
  * @param {Array} args
  * @param {number} t
