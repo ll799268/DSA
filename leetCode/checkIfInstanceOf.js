@@ -1,4 +1,5 @@
 /**
+ * 检查是否是类的对象实例
  * @param {*} obj
  * @param {*} classFunction
  * @return {boolean}
