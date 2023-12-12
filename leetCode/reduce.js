@@ -1,4 +1,5 @@
 /**
+ * 数组规约运算
  * @param {number[]} nums
  * @param {Function} fn
  * @param {number} init
