@@ -1,4 +1,5 @@
 /**
+ * 执行可取消的执行函数
  * @param {Function} fn
  * @param {Array} args
  * @param {number} t
