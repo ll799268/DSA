@@ -1,13 +1,13 @@
 /**
+ * 复合函数
  * @param {Function[]} functions
  * @return {Function}
  */
 var compose = function (functions) {
   return function (x) {
-    let i = functions.length - 1
-    while (i >= 0) {
-      x = functions[i](x)
-      i--
+    let i = functions.length
+    while (i-- > 0) {
+        x = functions[i](x)
     }
     return x
   }
