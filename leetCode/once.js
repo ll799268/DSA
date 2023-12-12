@@ -1,12 +1,12 @@
 /**
+ * 只允许函数执行一次
  * @param {Function} fn
  * @return {Function}
  */
 var once = function (fn) {
-  let calls = 0
+  let calls = 1
   return function (...args) {
-    calls++
-    if (calls === 1) {
+    if (calls++ === 1) {
       return fn(...args)
     }
   }
