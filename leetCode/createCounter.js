@@ -1,4 +1,5 @@
 /**
+ * 计数器
  * @param {number} n
  * @return {Function} counter
  */
