@@ -1,4 +1,5 @@
 /**
+ * 扁平化数组
  * @param {Array} arr
  * @param {number} depth
  * @return {Array}
