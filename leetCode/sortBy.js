@@ -1,4 +1,5 @@
 /**
+ * 排序方式
  * @param {Array} arr
  * @param {Function} fn
  * @return {Array}
