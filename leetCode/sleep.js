@@ -1,4 +1,5 @@
 /**
+ * 睡眠函数
  * @param {number} millis
  * @return {Promise}
  */
