@@ -1,3 +1,7 @@
+
+/**
+ * 使用方法链的计算器
+ */
 class Calculator {
 
   /** 
@@ -8,6 +12,7 @@ class Calculator {
   }
 
   /** 
+   * 累加
    * @param {number} value
    * @return {Calculator}
    */
@@ -17,6 +22,7 @@ class Calculator {
   }
 
   /** 
+   * 累减
    * @param {number} value
    * @return {Calculator}
    */
@@ -26,6 +32,7 @@ class Calculator {
   }
 
   /** 
+   * 累乘
    * @param {number} value
    * @return {Calculator}
    */
@@ -35,6 +42,7 @@ class Calculator {
   }
 
   /** 
+   * 累除
    * @param {number} value
    * @return {Calculator}
    */
@@ -47,6 +55,7 @@ class Calculator {
   }
 
   /** 
+   * 累幂
    * @param {number} value
    * @return {Calculator}
    */
@@ -56,6 +65,7 @@ class Calculator {
   }
 
   /** 
+   * 获取结果
    * @return {number}
    */
   getResult() {
