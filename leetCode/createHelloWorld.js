@@ -1,4 +1,5 @@
 /**
+ * 创建 Hello World 函数
  * @return {Function}
  */
 var createHelloWorld = function () {
