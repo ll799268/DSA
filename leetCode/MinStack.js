@@ -1,4 +1,5 @@
 /**
+ * 最小栈
  * initialize your data structure here.
  */
 var MinStack = function () {
