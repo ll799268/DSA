@@ -1,4 +1,5 @@
 /**
+ * 转换数组中的每一项
  * @param {number[]} arr
  * @param {Function} fn
  * @return {number[]}
