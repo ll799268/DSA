@@ -1,4 +1,5 @@
 /**
+ * 包装数组
  * @param {number[]} nums
  * @return {void}
  */
@@ -7,6 +8,7 @@ var ArrayWrapper = function (nums) {
 };
 
 /**
+ * 数组累加
  * @return {number}
  */
 ArrayWrapper.prototype.valueOf = function () {
@@ -18,6 +20,7 @@ ArrayWrapper.prototype.valueOf = function () {
 }
 
 /**
+ * 转换为字符串数组
  * @return {string}
  */
 ArrayWrapper.prototype.toString = function () {
