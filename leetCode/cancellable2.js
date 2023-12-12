@@ -1,5 +1,5 @@
 /**
- * 间隔取消二
+ * 间隔取消II
  * @param {Function} fn
  * @param {Array} args
  * @param {number} t
