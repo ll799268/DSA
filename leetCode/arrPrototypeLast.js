@@ -1,4 +1,5 @@
 /**
+ * 数组原型对象的最后一个元素
  * @return {null|boolean|number|string|Array|Object}
  */
 Array.prototype.last = function () {
