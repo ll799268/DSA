@@ -1,4 +1,5 @@
 /**
+ * 相等还是不相等
  * @param {string} val
  * @return {Object}
  */
