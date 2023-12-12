@@ -1,4 +1,5 @@
 /**
+ * 判断对象是否为空
  * @param {Object|Array} obj
  * @return {boolean}
  */
