@@ -7,6 +7,7 @@
  * }
  */
 /**
+ * 对称二叉树
  * @param {TreeNode} root
  * @return {boolean}
  */
