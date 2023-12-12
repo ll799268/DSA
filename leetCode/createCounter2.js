@@ -1,4 +1,5 @@
 /**
+ * 计数器II
  * @param {integer} init
  * @return { increment: Function, decrement: Function, reset: Function }
  */
