@@ -1,4 +1,5 @@
 /**
+ * 函数防抖
  * @param {Function} fn
  * @param {number} t milliseconds
  * @return {Function}
