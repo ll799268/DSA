@@ -1,4 +1,5 @@
 /**
+ * 生成斐波那契数列
  * @return {Generator<number>}
  */
 var fibGenerator = function* () {
