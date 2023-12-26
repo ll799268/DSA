@@ -25,4 +25,14 @@ var isPalindrome = function (x) {
   return String(x) === String(x).split('').reverse().join('')
 }
 
+var isPalindrome = function (x) {
+  if (s === '') return true
+  const code = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
+  for (let i = 0, j = code.length - 1; i < j; i++, j--) {
+    if (code[i] !== code[j]) return false
+  }
+
+  return true
+}
+
 console.log(isPalindrome(121))
