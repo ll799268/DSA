@@ -7,8 +7,8 @@ function decompressRLElist(nums: number[]): number[] {
   let result: Array<number> = []
 
   for (let i = 1; i < nums.length; i += 2) {
-    let count = nums[i - 1]
-    const cur = nums[i]
+    let count: number = nums[i - 1]
+    const cur: number = nums[i]
 
     while (count--) {
       result.push(cur)
@@ -17,3 +17,5 @@ function decompressRLElist(nums: number[]): number[] {
 
   return result
 };
+
+console.log(decompressRLElist([1, 2, 3, 4]));
