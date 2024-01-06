@@ -3,7 +3,7 @@
  * @param {number[]} nums
  * @return {number}
  */
-var missingNumber = function (nums: Array<number>): number {
+var missingNumber = function (nums) {
   let n = nums.length
   let sum = nums.reduce((c, p) => c + p)
 
@@ -14,7 +14,7 @@ var missingNumber = function (nums: Array<number>): number {
   return Math.abs(sum)
 };
 
-var missingNumber1 = function (nums: Array<number>): number | undefined {
+var missingNumber = function (nums) {
   nums.sort((a, b) => a - b)
 
   for (let i = 0; i <= nums.length; i++) {
@@ -22,4 +22,4 @@ var missingNumber1 = function (nums: Array<number>): number | undefined {
   }
 };
 
-// console.log(missingNumber([0, 1]));
+console.log(missingNumber([0, 1]));
