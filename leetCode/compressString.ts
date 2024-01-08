@@ -1,7 +1,5 @@
 /**
  * 字符串压缩
- * @param S 
- * @returns 
  */
 function compressString(S: string): string {
   let s: string = ''
