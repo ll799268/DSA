@@ -1,7 +1,5 @@
 /**
  * 找出井字棋的获胜者
- * @param moves 
- * @returns 
  */
 function tictactoe(moves: number[][]): string {
   const arr: string[][] = [['', '', ''], ['', '', ''], ['', '', '']]
