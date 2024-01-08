@@ -2,10 +2,10 @@
  * 创建 Hello World 函数
  * @return {Function}
  */
-var createHelloWorld = function () {
-  return function (...args) {
+function createHelloWorld(): Function {
+  return function (...args: any[]): string {
     return "Hello World"
-  }
+  };
 };
 
 /**
