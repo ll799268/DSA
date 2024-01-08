@@ -1,7 +1,5 @@
 /**
  * 回旋镖的数量
- * @param points 
- * @returns 
  */
 function numberOfBoomerangs(points: number[][]): number {
   let ans: number = 0
