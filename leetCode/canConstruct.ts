@@ -1,9 +1,6 @@
 
 /**
  * 赎金信
- * @param ransomNote 
- * @param magazine 
- * @returns 
  */
 function canConstruct(ransomNote: string, magazine: string): boolean {
   let n: number = ransomNote.length
