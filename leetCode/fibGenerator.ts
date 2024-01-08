@@ -1,10 +1,9 @@
 /**
  * 生成斐波那契数列
- * @return {Generator<number>}
  */
-var fibGenerator = function* () {
-  let pre = 0,
-    cur = 1;
+function* fibGenerator(): Generator<number, any, number> {
+  let pre: number = 0,
+    cur: number = 1;
 
   yield pre;
   yield cur;
@@ -13,7 +12,8 @@ var fibGenerator = function* () {
     yield pre + cur;
     [pre, cur] = [cur, pre + cur];
   }
-}
+};
+
 /**
 * const gen = fibGenerator();
 * gen.next().value; // 0
