@@ -1,7 +1,5 @@
 /**
  * 螺旋矩阵
- * @param matrix 
- * @returns 
  */
 function spiralOrder(matrix: number[][]): number[] {
   const result: number[] = []
