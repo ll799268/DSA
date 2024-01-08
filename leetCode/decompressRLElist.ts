@@ -1,7 +1,5 @@
 /**
  * 解压缩编码列表
- * @param nums 
- * @returns 
  */
 function decompressRLElist(nums: number[]): number[] {
   let result: Array<number> = []
