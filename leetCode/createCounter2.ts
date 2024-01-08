@@ -6,10 +6,8 @@ type Counter = {
 
 /**
  * 计数器II
- * @param {integer} init
- * @return { increment: Function, decrement: Function, reset: Function }
  */
-function createCounter(init: number): Counter {
+function createCounter2(init: number): Counter {
   let result: number = init
   const increment: Counter['increment'] = (): number => ++result
   const decrement: Counter['decrement'] = (): number => --result
