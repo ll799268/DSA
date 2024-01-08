@@ -1,7 +1,5 @@
 /**
  * 整数转罗马数字
- * @param num 
- * @returns 
  */
 function intToRoman(num: number): string {
   let map: { [key: string]: number } = {
