@@ -1,7 +1,5 @@
 /**
  * 睡眠函数
- * @param {number} millis
- * @return {Promise}
  */
 
 async function sleep(millis: number): Promise<void> {
