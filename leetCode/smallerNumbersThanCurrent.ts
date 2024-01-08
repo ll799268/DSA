@@ -1,7 +1,5 @@
 /**
  * 有多少小于当前数字的数字
- * @param nums 
- * @returns 
  */
 function smallerNumbersThanCurrent(nums: number[]): number[] {
   let result: number[] = []
