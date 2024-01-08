@@ -19,11 +19,11 @@ function compressString(S: string): string {
 };
 
 function compressString1(S: string): string {
-  let i = 0,
-    j = 0,
-    len = S.length
+  let i: number = 0,
+    j: number = 0,
+    len: number = S.length
 
-  let s = ''
+  let s: string = ''
 
   while (i < len) {
     while (j < len && S.charAt(i) === S.charAt(j)) {
