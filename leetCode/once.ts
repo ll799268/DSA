@@ -3,9 +3,7 @@ type OnceFn = (...args: JSONValue[]) => JSONValue | undefined
 
 /**
  * 只允许函数执行一次
- * @param {Function} fn
- * @return {Function}
- */
+*/
 function once(fn: Function): OnceFn {
   let calls: number = 1
   return function (...args) {
