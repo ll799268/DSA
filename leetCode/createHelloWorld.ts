@@ -1,6 +1,5 @@
 /**
  * 创建 Hello World 函数
- * @return {Function}
  */
 function createHelloWorld(): Function {
   return function (...args: any[]): string {
