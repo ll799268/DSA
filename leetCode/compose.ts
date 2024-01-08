@@ -2,9 +2,7 @@ type F = (x: number) => number;
 
 /**
  * 复合函数
- * @param {Function[]} functions
- * @return {Function}
- */
+*/
 function compose(functions: F[]): F {
   return function (x) {
     let i: number = functions.length
