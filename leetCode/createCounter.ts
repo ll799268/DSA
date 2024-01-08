@@ -1,7 +1,5 @@
 /**
  * 计数器
- * @param {number} n 
- * @returns {Function} counter
  */
 function createCounter(n: number): () => number {
   return function () {
