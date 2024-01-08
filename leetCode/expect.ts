@@ -1,14 +1,17 @@
 /**
  * 相等还是不相等
- * @param {string} val
- * @return {Object}
  */
-var expect = function (val) {
-  this.toBe = propVal => {
+type ToBeOrNotToBe = {
+  toBe: (val: number) => boolean;
+  notToBe: (val: number) => boolean;
+};
+
+function expect(val: number): ToBeOrNotToBe {
+  this.toBe = (propVal: number): boolean | Error => {
     if (val === propVal) return true
     throw new Error('Not Equal')
   }
-  this.notToBe = propVal => {
+  this.notToBe = (propVal: number): boolean | Error => {
     if (val !== propVal) return true
     throw new Error('Equal')
   }
