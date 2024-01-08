@@ -1,7 +1,5 @@
 /**
  * 矩阵对角线元素的和
- * @param mat 
- * @returns 
  */
 function diagonalSum(mat: number[][]): number {
   const n: number = mat.length,
