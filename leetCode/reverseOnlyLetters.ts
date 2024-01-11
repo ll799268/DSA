@@ -16,6 +16,8 @@ function reverseOnlyLetters(s: string): string {
       continue
     }
     [arr[i], arr[j]] = [arr[j], arr[i]]
+    i++
+    j--
   }
 
   return arr.join('')
