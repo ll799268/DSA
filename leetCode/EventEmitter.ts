@@ -7,7 +7,11 @@ type Subscription = {
  * 事件发射器
  */
 class EventEmitter {
-  private event: { [key: string]: Callback[] } = {}
+  private event: { [key: string]: Callback[] }
+
+  constructor () {
+    this.event = {}
+  }
 
   subscribe(eventName: string, callback: Callback): Subscription {
     eventName in this.event ?
