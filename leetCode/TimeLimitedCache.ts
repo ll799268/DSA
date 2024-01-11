@@ -8,7 +8,11 @@ interface ITimer {
  * 具有时间限制的缓存
  */
 class TimeLimitedCache {
-  private timer: Map<number, ITimer> = new Map()
+  private timer: Map<number, ITimer>
+
+  constructor () {
+    this.timer = new Map()
+  }
 
   set(key: number, value: number, duration: number): boolean {
     const now: number = Date.now()
