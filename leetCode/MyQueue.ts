@@ -18,7 +18,7 @@ class MyQueue {
     if (!this.outStack.length) {
       this.in2out()
     }
-    return this.outStack.pop() as number
+    return this.outStack.pop()!
   }
 
   peek(): number {
@@ -34,7 +34,7 @@ class MyQueue {
 
   in2out(): void {
     while (this.inStack.length) {
-      this.outStack.push(this.inStack.pop() as number)
+      this.outStack.push(this.inStack.pop()!)
     }
   }
 }
