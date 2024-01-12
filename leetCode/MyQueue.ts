@@ -3,7 +3,7 @@
  */
 class MyQueue {
   private inStack: number[]
-  public outStack: number[]
+  private outStack: number[]
 
   constructor() {
     this.inStack = []
