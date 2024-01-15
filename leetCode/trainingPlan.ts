@@ -1,19 +1,17 @@
 /**
  * 训练计划I
- * @param {number[]} actions
- * @return {number[]}
  */
-var trainingPlan = function (actions) {
+function trainingPlan(actions: number[]): number[] {
   return [...actions.filter(item => item % 2 === 1), ...actions.filter(item => item % 2 === 0)]
 };
 
-var trainingPlan = function (actions) {
+function trainingPlan1(actions: number[]): number[] {
   return actions.sort((a, b) => b % 2 - a % 2)
 };
 
 // 快慢指针
-var trainingPlan = function (actions) {
-  let slowIdx = 0
+function trainingPlan2(actions: number[]): number[] {
+  let slowIdx: number = 0
   for (let fastIdx = 0; fastIdx < actions.length; fastIdx++) {
     if (actions[fastIdx] % 2 === 1) {
       [actions[slowIdx], actions[fastIdx]] = [actions[fastIdx], actions[slowIdx]]
@@ -25,9 +23,9 @@ var trainingPlan = function (actions) {
 }
 
 // 前后指针
-var trainingPlan = function (actions) {
-  let l = 0,
-    r = actions.length - 1
+function trainingPlan3(actions: number[]): number[] {
+  let l: number = 0,
+    r: number = actions.length - 1
 
   while (l < r) {
     if (actions[l] % 2 === 1) {
