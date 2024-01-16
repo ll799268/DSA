@@ -16,3 +16,5 @@ function removeDuplicates(s: string): string {
 
   return stack.join('')
 }
+
+console.log(removeDuplicates('abbaca'))
