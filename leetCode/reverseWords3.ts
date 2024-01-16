@@ -1,9 +1,7 @@
 /**
  * 反转字符串中的单词III
- * @param {string} s
- * @return {string}
  */
-var reverseWords = function (s) {
+function reverseWords(s: string): string {
   const arr = s.split(' ')
   
   for (let i = 0; i < arr.length; i++) {
@@ -13,12 +11,7 @@ var reverseWords = function (s) {
   return arr.join(' ')
 };
 
-
-/**
- * @param {string} s
- * @return {string}
- */
-var reverseWords = function (s) {
+function reverseWords1(s: string): string {
   const arr = s.split(' ')
   
   for (let left = 0, right = arr.length - 1; left <= right; left++, right--) {
