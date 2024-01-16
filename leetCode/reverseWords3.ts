@@ -2,7 +2,7 @@
  * 反转字符串中的单词III
  */
 function reverseWords(s: string): string {
-  const arr = s.split(' ')
+  const arr: string[] = s.split(' ')
   
   for (let i = 0; i < arr.length; i++) {
     arr[i] = arr[i].split('').reverse().join('')
@@ -10,6 +10,7 @@ function reverseWords(s: string): string {
 
   return arr.join(' ')
 };
+
 
 function reverseWords1(s: string): string {
   const arr = s.split(' ')
