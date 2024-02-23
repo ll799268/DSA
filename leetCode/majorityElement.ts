@@ -1,10 +1,8 @@
 /**
  * 多数元素
- * @param {number[]} nums
- * @return {number}
  */
-var majorityElement = function (nums) {
-  const map = new Map()
+function majorityElement(nums: number[]): number {
+  const map: Map<number, number> = new Map()
 
   for (let i = 0; i < nums.length; i++) {
     if (map.has(nums[i])) {
@@ -21,7 +19,7 @@ var majorityElement = function (nums) {
   }
 };
 
-var majorityElement = function (nums) {
+function majorityElement2(nums: number[]): number {
   nums = nums.sort((a, b) => a - b)
   return nums[Math.floor(nums.length / 2)]
 }
