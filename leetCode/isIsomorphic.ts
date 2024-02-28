@@ -1,7 +1,21 @@
 /**
  * 同构字符串
  */
+
 function isIsomorphic(s: string, t: string): boolean {
+  if (s.length !== t.length) return false
+  
+  for (let i = 0; i < s.length; i++) {
+    const sCode: string = s[i]
+    const tCode: string = t[i]
+
+    if (s.indexOf(sCode) !== t.indexOf(tCode)) return false
+  }
+
+  return true
+}
+
+function isIsomorphic1(s: string, t: string): boolean {
   const map1: Map<string, number> = new Map()
   const map2: Map<string, number> = new Map()
 
