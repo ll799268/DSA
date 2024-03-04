@@ -3,7 +3,7 @@ import ListNode from './ListNode'
 /**
  * 回文链表
  */
-function isPalindrome(head: ListNode | null): boolean {
+function isPalindromeLink(head: ListNode | null): boolean {
   const arr: number[] = []
   while (head) {
     arr.push(head.val)
@@ -16,7 +16,7 @@ function isPalindrome(head: ListNode | null): boolean {
 
   return true
 };
-function isPalindrome1(head: ListNode | null): boolean {
+function isPalindromeLink1(head: ListNode | null): boolean {
   let frontPointer: ListNode | null | any = null
   const recursivelyCheck = (currentNode: ListNode | null) => {
     if (currentNode !== null) {
