@@ -2,7 +2,7 @@
  * 回文字符串
  */
 
-function isPalindrome(s: string): boolean {
+function isPalindromeString(s: string): boolean {
   const code: string = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
 
   for (let i = 0, j = code.length - 1; i < j; i++, j--) {
@@ -12,7 +12,7 @@ function isPalindrome(s: string): boolean {
   return true
 };
 
-function isPalindrome1(s: string): boolean {
+function isPalindromeString1(s: string): boolean {
   const code: string = s.replace(/[^a-zA-Z0-9]/g, '').toLowerCase()
 
   for (let i = 0; i < Math.floor(code.length / 2); i++) {
