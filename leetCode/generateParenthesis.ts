@@ -3,10 +3,10 @@
  * @param {number} n
  * @return {string[]}
  */
-var generateParenthesis = function (n) {
-  const result = []
+function generateParenthesis(n: number): string[] {
+  const result: string[] = []
 
-  const dfs = (l, r, str) => {
+  const dfs = (l: number, r: number, str: string) => {
     if (n * 2 === str.length) {
       result.push(str)
       return
@@ -26,10 +26,10 @@ var generateParenthesis = function (n) {
   return result
 };
 
-var generateParenthesis2 = function (n) {
+function generateParenthesis1(n: number): string[] {
   const result = []
 
-  const dfs = (open, close, path) => {
+  const dfs = (open: number, close: number, path: string) => {
     if (open > n || close > open) return
 
     if (path.length === 2 * n) {
@@ -48,13 +48,9 @@ var generateParenthesis2 = function (n) {
 
 /**
  * 生成完全二叉树-深度优先
- * @param {number} n 深度
- * @param {string} path 
- * @param {array} res 
- * @returns 
  */
 // depth first search
-const dfs = (n, path = '', res = []) => {
+const dfs = (n: number, path = '', res = []) => {
   if (path.length == 2 * n) {
     res.push(path)
     return
