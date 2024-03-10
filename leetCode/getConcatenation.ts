@@ -9,11 +9,9 @@ function getConcatenation(nums: number[]): number[] {
 
 function getConcatenation1(nums: number[]): number[] {
   const n: number = nums.length
-  const result: number[] = []
 
-  for (let i = 0; i < nums.length; i++) {
-    result[i + n] = result[i] = nums[i]
+  for (let i = 0; i < n; i++) {
+    nums.push(nums[i])
   }
-
-  return result
+  return nums
 };
