@@ -3,13 +3,13 @@
  * @param {number[]} nums
  * @return {number[]}
  */
-var getConcatenation = function (nums) {
+function getConcatenation(nums: number[]): number[] {
   return [...nums, ...nums]
 };
 
-var getConcatenation = function (nums) {
-  const n = nums.length
-  const result = []
+function getConcatenation1(nums: number[]): number[] {
+  const n: number = nums.length
+  const result: number[] = []
 
   for (let i = 0; i < nums.length; i++) {
     result[i + n] = result[i] = nums[i]
