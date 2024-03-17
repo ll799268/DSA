@@ -1,9 +1,7 @@
 /**
  * 只出现一次的数字II
- * @param {number[]} nums
- * @return {number}
  */
-var singleNumber = function (nums) {
+function singleNumber(nums: number[]): number {
   const map = new Map()
   for (const k of nums) {
     const count = map.get(k)
