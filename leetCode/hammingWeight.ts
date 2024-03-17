@@ -2,7 +2,7 @@
  * 位1的个数
  */
 function hammingWeight(n: number): number {
-  let result = 0
+  let result: number = 0
 
   while (n) {
     result++
