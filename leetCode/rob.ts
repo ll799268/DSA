@@ -1,12 +1,10 @@
 /**
  * 打家劫舍
- * @param {number[]} nums
- * @return {number}
  */
-var rob = function (nums) {
+function rob(nums: number[]): number {
   if (nums.length === 0) return 0
 
-  const dp = new Array(nums.length).fill(0)
+  const dp: number[] = new Array(nums.length).fill(0)
   dp[0] = 0
   dp[1] = nums[0]
 
@@ -14,16 +12,16 @@ var rob = function (nums) {
     dp[i] = Math.max(nums[i - 1] + dp[i - 2], dp[i - 1])
   }
 
-  return dp[nums.length - 1]
+  return dp[nums.length]
 };
 
-var rob = function (nums) {
-  let pre = 0
-  let cur = 0
+function rob1(nums: number[]): number {
+  let pre: number = 0
+  let cur: number = 0
 
-  let i = -1
+  let i: number = -1
   while (i++ < nums.length - 1) {
-    let temp = Math.max(pre + nums[i], cur)
+    let temp: number = Math.max(pre + nums[i], cur)
     pre = cur
     cur = temp
   }
