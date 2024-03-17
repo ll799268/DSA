@@ -1,9 +1,7 @@
 /**
  * 位1的个数
- * @param {number} n - a positive integer
- * @return {number}
  */
-var hammingWeight = function (n) {
+function hammingWeight(n: number): number {
   let result = 0
 
   while (n) {
@@ -17,10 +15,10 @@ var hammingWeight = function (n) {
 
 // 常见的位运算
 // 判断奇偶
-x & 1 === 0
+// x & 1 === 0
 
 // 消除最右边的1
-x & (x - 1)
+// x & (x - 1)
 
 // 得到最右边的1
-x & -x
+// x & -x
