@@ -1,11 +1,8 @@
 /**
  * 零钱兑换
- * @param {number[]} coins
- * @param {number} amount
- * @return {number}
  */
-var coinChange = function (coins, amount) {
-  const dp = new Array(amount + 1).fill(Infinity)
+function coinChange(coins: number[], amount: number): number {
+  const dp: number[] = new Array(amount + 1).fill(Infinity)
   dp[0] = 0
 
   for (let i = 0; i <= amount; i++) {
