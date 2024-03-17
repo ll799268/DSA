@@ -1,9 +1,7 @@
 /**
  * 寻找峰值
- * @param {number[]} nums
- * @return {number}
  */
-var findPeakElement = function (nums) {
+function findPeakElement(nums: number[]): number {
   for (let i = 1; i < nums.length; i++) {
     const p = nums[i - 1]
     const c = nums[i]
@@ -17,12 +15,12 @@ var findPeakElement = function (nums) {
   return 0
 };
 
-var findPeakElement = function (nums) {
+function findPeakElement1(nums: number[]): number {
   return nums.findIndex(item => item === Math.max(...nums))
 }
 
-var findPeakElement = function (nums) {
-  let ans = 0
+function findPeakElement2(nums: number[]): number {
+  let ans: number = 0
   for (let i = 1; i < nums.length; i++) {
     if (nums[i] > nums[ans]) {
       ans = i
