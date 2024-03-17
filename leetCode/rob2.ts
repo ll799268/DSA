@@ -1,9 +1,7 @@
 /** 
  * 打家劫舍Ⅱ
- * @param {number[]} nums
- * @return {number}
  */
-var rob = function (nums) {
+function rob(nums: number[]): number {
   if (nums.length === 1) return nums[0];
   if (nums.length === 2) return Math.max(...nums);
 
@@ -13,8 +11,8 @@ var rob = function (nums) {
   let arr2 = nums.slice(0, nums.length - 1)
 
   // 创建dp数组
-  let opt1 = new Array(arr1.length).fill(0)
-  let opt2 = new Array(arr2.length).fill(0)
+  let opt1: number[] = new Array(arr1.length).fill(0)
+  let opt2: number[] = new Array(arr2.length).fill(0)
 
   opt1[0] = arr1[0]
   opt2[0] = arr2[0]
